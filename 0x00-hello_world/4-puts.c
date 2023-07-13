@@ -1,14 +1,14 @@
 /*
- * 4.Hello, puts
- * A new way to print
+ * File: 4-puts.c
  */
 
 #include <stdio.h>
 
 /**
- * main : Print "Programming is like building a multilingual puzzle, followed by a new line.
+ * main - Prints "Programming is like building a multilingual
+ *                puzzle, followed by a new line.
  *
- * return :Always 0.
+ * Return: Always 0.
  */
 int main(void)
 {

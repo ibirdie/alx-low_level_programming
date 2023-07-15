@@ -4,12 +4,12 @@
  *
  *Return: function ends
  */
-int main(void)
+	int main(void)
 {
 	char alph[25] = "abcdfghijklmnoprstuvwxyz\n";
-    int i = 0;
-    
-	while (i < 25 )
+	int i = 0;
+
+	while (i < 25)
 	{
 		putchar(alph[i]);
 		i++;

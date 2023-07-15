@@ -11,9 +11,10 @@ int main(void)
 	num = -1;
 	while (num != 10)
 	{
-		printf("%d", num, num++);
-
+	printf("%d", num);
+	num=num+1;
 	}
+
 
 	return (0);
 }

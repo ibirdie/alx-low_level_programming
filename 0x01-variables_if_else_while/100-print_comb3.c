@@ -16,7 +16,8 @@ int main(void)
 	{
 		putchar(a + '0');
 		putchar(b + '0');
-		while (a == 8 && b == 9)
+		if (a == 8 && b == 9)
+		continue;
 		putchar(44);
 		putchar(32);
 	}

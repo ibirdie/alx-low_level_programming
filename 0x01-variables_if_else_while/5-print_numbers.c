@@ -6,6 +6,11 @@
  */
 int main(void)
 {
-	printf("0123456789\n");
+	int a = 0;
+		while (a < 10)
+		{
+			putchar(a + '0');
+			a++;
+		}
 	return (0);
 }

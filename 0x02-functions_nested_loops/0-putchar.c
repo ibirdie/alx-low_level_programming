@@ -1,9 +1,9 @@
 #include <stdio.h>
-/*
- * main - printing _putchar.
- *
- * Return: Always (0);
- */
+/**
+  *main - Putchar.
+  *
+  *Return: Always (0);
+  */
 
 int main(void)
 {

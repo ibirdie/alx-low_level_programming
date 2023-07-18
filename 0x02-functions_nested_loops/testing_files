@@ -1,0 +1,24 @@
+#!/bin/bash
+
+read -p "Enter names of all files to be created: " file_names
+
+for file_name in $file_names; do
+    touch "$file_name"
+    echo '#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+/**
+ * main - The last digit
+ *
+ * Return: Always (0);
+ */
+
+int main(void)
+{
+
+}
+' > "$file_name"
+    chmod u+x "$file_name"
+done
+
+echo "Files created successfully with execute permissions. \n"

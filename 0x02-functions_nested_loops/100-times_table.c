@@ -8,33 +8,43 @@
 
 void print_times_table(int n)
 {
-	int prod, mult, num;
-
-	if (n <= 15 && n >= 0)
+	int a, b , c;
+	if (n < 0 || n > 15)
+		return;
+	for (a = 0; a <= n; a++)
 	{
-		for (num = 0; num <= n; ++num)
+		for (b = 0; b <= n; b++)
 		{
-			_putchar(48);
-			for (mult = 1; mult <= n; ++mult)
+			c = a * b;
+			if (b == 0)
+			{
+				_putchar(c + '0');
+			}
+
+			if (c <= 9 && b != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
-
-				prod = num * mult;
-
-				if (prod <= 9)
-					_putchar(' ');
-				if (prod <= 99)
-					_putchar(' ');
-
-				if (prod >= 100)
-				{
-					_putchar((prod / 100) + 48);
-					_putchar((prod / 10) % 10 + 48);
-				} else if (prod <= 99 && prod >= 10)
-					_putchar((prod / 10) + 48);
-				_putchar((prod % 10) + 48);
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(c + '0');
 			}
-			_putchar('\n');
+			else if (c > 9 && c <= 99)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar((c / 10) + '0');
+				_putchar((c % 10) + '0');
+			}
+			else if (c >= 100)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar((c / 100) + '0');
+				_putchar(((c % 10) % 10) + '0');
+				_putchar((c % 10) + '0');
+			}
 		}
 	}
+}

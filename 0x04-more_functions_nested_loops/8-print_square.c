@@ -1,21 +1,26 @@
 #include "main.h"
 /**
-  *print sqaure - Printing squares a number of times'
-  *@n: input number
+  *print_square - Printing squares a number of times'
+  *@size: input number
   *
   */
 
 void print_square(int size)
 {
 	int a;
+	int b;
 
-	if (size > 0)
-	{
-		for (a = 0; a <= size; a++)
-			if (size % 2 == 0)
-			_putchar('#');
-
+	if (size <= 0)
 		_putchar('\n');
+	else
+	{
+		for (a = 0; a < size; a++)
+		{
+			for (b = 0; b < size; b++)
+			{
+			_putchar('#');
+			}
+		_putchar('\n');
+		}
 	}
-	_putchar('\n');
 }

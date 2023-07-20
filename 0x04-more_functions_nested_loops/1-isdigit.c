@@ -2,6 +2,7 @@
 
 /**
   *_isdigit - Checking for digits.
+  *@c: Input character'
   *
   *Return: 1 or 0 if not.
   */
